@@ -1,5 +1,5 @@
 # Youtube-Clone
-* A Simple YouTube Clone Created With Reat & CSS Module
+* A Simple YouTube Clone Created With React , React router, react icons & CSS Module
 # Features
 * View a list of predefined video thumbnails.
 * Click on a thumbnail to play the video.
