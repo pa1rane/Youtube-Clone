@@ -4,15 +4,6 @@
     overflow: hidden;
 }
 
-.home{
-    display: flex;
-    justify-content: space-between;
-    font-size: 1.5rem;
-    font-weight: bold;
-    width: 100%;
-    padding: 1rem;
-}
-
 .vidContainer{
     display: flex;
     flex-direction: column;
@@ -57,3 +48,4 @@
 .link{
     text-decoration: none;
 }
+

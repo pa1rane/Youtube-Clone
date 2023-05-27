@@ -5,6 +5,11 @@ import VideoList from "../videolist/VideoList";
 
 const VideoPlayer = ({ video, videos }) => {
   
+  const style2 = {
+    '@media (max-width: 500px)': {
+        width: '60%'
+    }
+  }
   
   return (
     <>

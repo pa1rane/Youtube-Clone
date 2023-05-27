@@ -7,7 +7,6 @@ import Sidebar from "./components/sidebar/Sidebar";
 import VideoList from "./components/videolist/VideoList";
 import VideoPlayer from "./components/videoplayer/VideoPlayer";
 import Pagination from "./components/pagination/Pagination";
-import MyComponent from "./components/videolist/MyComponent";
 
 const App = () => {
   const [videos, setVideos] = useState([]);
