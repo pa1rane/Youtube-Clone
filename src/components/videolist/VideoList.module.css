@@ -1,0 +1,59 @@
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.home{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    font-weight: bold;
+    width: 100%;
+    padding: 1rem;
+}
+
+.vidContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 15rem;
+    height: 17rem;
+}
+
+.vidContainer2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+    text-align: center;
+    gap: 1rem;
+}
+
+.thumbnail{
+    width:13rem;
+    height: 13rem;
+    border-radius: 7px;
+}
+
+.pic{
+    width: 1.8rem;
+    height: 1.8rem;
+    border-radius: 50%;
+}
+
+.title{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.907);
+}
+
+.username{
+    font-size: 0.9rem;
+    color: rgba(0, 0, 0, 0.589);
+}
+
+.link{
+    text-decoration: none;
+}

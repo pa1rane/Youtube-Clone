@@ -1,0 +1,7 @@
+.contentWrapper {
+    display: flex;
+  }
+  
+  .videoListWrapper {
+    flex: 1;
+  }
