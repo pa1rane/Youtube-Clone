@@ -11,6 +11,7 @@ import Pagination from "./components/pagination/Pagination";
 const App = () => {
   const [videos, setVideos] = useState([]);
   const [selectedVideo, setSelectedVideo] = useState(null);
+  const [input, setInput] = useState("");
 
   useEffect(() => {
     fetchVideos(0); // Start with page 0
@@ -30,10 +31,16 @@ const App = () => {
   const handleVideoClick = (video) => {
     setSelectedVideo(video);
   };
+
+  const handleChange = (e) => {
+    setInput(e.target.value)
+  }
+  console.log(input)
+
 console.log(selectedVideo)
   return (
     <React.Fragment>
-      <Navbar />
+      <Navbar handleChange={handleChange}/>
       <div className={styles.contentWrapper}>
         <Sidebar />
         <div className={styles.videoListWrapper}>
