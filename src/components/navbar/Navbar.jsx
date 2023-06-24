@@ -7,7 +7,12 @@ import {IoMdNotificationsOutline} from 'react-icons/io';
 import {RxAvatar} from 'react-icons/rx';
 import styles from './Navbar.module.css';
 
-const Navbar = ({handleChange}) => {
+const Navbar = ({handleChange,handleSearch}) => {
+
+  const handleSearchClick = () => {
+    handleSearch();
+  };
+
   return (
     <>
       <div className={styles.mainDiv}>
@@ -24,7 +29,7 @@ const Navbar = ({handleChange}) => {
             <div className={styles.searchBar}>
            <input type="text" placeholder='Search' className={styles.searchInput}
            onChange={handleChange} />
-           <AiOutlineSearch className={styles.searchIcon}/>
+           <AiOutlineSearch className={styles.searchIcon} onClick={handleSearchClick}/>
            <MdKeyboardVoice className={styles.voiceIcon}/>
            </div>
            

@@ -14,7 +14,7 @@ const App = () => {
   const [input, setInput] = useState("");
 
   useEffect(() => {
-    fetchVideos(0); // Start with page 0
+    fetchVideos(0); 
   }, []);
 
   const fetchVideos = async (page) => {
@@ -35,12 +35,18 @@ const App = () => {
   const handleChange = (e) => {
     setInput(e.target.value)
   }
-  console.log(input)
+  
+  const handleSearchList = () => {
+      const filteredList = videos.filter((video) => 
+      video.creator.handle.toLowerCase().includes(input.toLowerCase())
+      );
+        setVideos(filteredList)
+        setSelectedVideo(null)
+  }
 
-console.log(selectedVideo)
   return (
     <React.Fragment>
-      <Navbar handleChange={handleChange}/>
+      <Navbar handleChange={handleChange} handleSearch={handleSearchList}/>
       <div className={styles.contentWrapper}>
         <Sidebar />
         <div className={styles.videoListWrapper}>
