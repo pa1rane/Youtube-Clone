@@ -4,6 +4,7 @@
 * View a list of predefined video thumbnails.
 * Click on a thumbnail to play the video.
 * See basic information about the video such as the title and description
+* Search filter
 # Installation
 * `git clone https://github.com/pa1rane/Youtube-Clone`
 * `npm install`
