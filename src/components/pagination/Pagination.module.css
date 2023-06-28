@@ -10,7 +10,7 @@
   .prevBtn{
     width: 5rem;
     height: 1.5rem;
-    background: #000;
+    background: #000000d6;
     color: aliceblue;
     border: none;
     font-weight: bold;
@@ -19,7 +19,7 @@
   .nextBtn{
     width: 5rem;
     height: 1.5rem;
-    background: #000;
+    background: #000000d6;
     color: aliceblue;
     border: none;
     font-weight: bold;
